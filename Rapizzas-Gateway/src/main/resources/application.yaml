@@ -5,6 +5,17 @@ spring:
     gateway:
       server:
         webflux:
+          globalcors:
+            corsConfigurations:
+              '[/**]':
+                allowedOrigins:
+                  - "http://localhost:5173"
+                  - "https://front-end-rapizzas.vercel.app"
+                allowedMethods:
+                  - "*"
+                allowedHeaders:
+                  - "*"
+                allowCredentials: true
           routes:
             - id: rapizzas-employee
               uri: https://rapizzas-ing-soft-ii.onrender.com
