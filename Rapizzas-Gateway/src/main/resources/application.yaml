@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: rapizzas-gateway
+  config:
+    import: optional:configserver:https://parameter-catalog-rapizzas.onrender.com
+
+server:
+  port: 2345
