@@ -11,6 +11,8 @@ spring:
                 allowedOrigins:
                   - "http://localhost:5173"
                   - "https://front-end-rapizzas.vercel.app"
+                  - "https://rapizzas.com"
+                  - "https://www.rapizzas.com"
                 allowedMethods:
                   - "*"
                 allowedHeaders:
